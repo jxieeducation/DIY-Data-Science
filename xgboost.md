@@ -14,8 +14,12 @@ After you have been familiarized with the syntax, let's try out a simple [exampl
 
 Loading data [example](https://github.com/dmlc/xgboost/blob/master/doc/python/python_intro.md#data-interface)
 
-Setting the parameters [example](https://github.com/dmlc/xgboost/blob/master/doc/python/python_intro.md#setting-parameters) and [good parameter values](http://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/) (scroll to the General Parameters section)
+#####Setting the parameters 
+* [example](https://github.com/dmlc/xgboost/blob/master/doc/python/python_intro.md#setting-parameters) 
+* [good parameter values](http://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/) (scroll to the General Parameters section) 
+* [parameter introduction](http://www.slideshare.net/ShangxuanZhang/kaggle-winning-solution-xgboost-algorithm-let-us-learn-from-its-author)(slides 57-70)
 
+#####Training 
 
 
 
@@ -35,6 +39,12 @@ Setting the parameters [example](https://github.com/dmlc/xgboost/blob/master/doc
 #####Early Stopping
 * This lets you stop the training if validation score isn't improving
 * [Example](http://xgboost.readthedocs.org/en/latest/python/python_intro.html#early-stopping)
+* [Detailed explanation](http://www.slideshare.net/ShangxuanZhang/kaggle-winning-solution-xgboost-algorithm-let-us-learn-from-its-author) (slides 100-101)
+
+#####Feature Importance
+* Provides insight as to whether a feature is important
+* [Script example](https://www.kaggle.com/tqchen/otto-group-product-classification-challenge/understanding-xgboost-model-on-otto-data/notebook) (Section 4, Model Understanding)
+* [Explanation](http://www.slideshare.net/ShangxuanZhang/kaggle-winning-solution-xgboost-algorithm-let-us-learn-from-its-author) (slides 97 - 99)
 
 #####External memory 
 * This feature lets you train on data bigger than your box's RAM
