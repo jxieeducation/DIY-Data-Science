@@ -1,6 +1,6 @@
 ##The DIY Guide to XGBoost
 
-[![Analytics](https://ga-beacon.appspot.com/UA-61611403-2/xgboost)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-61611403-2/jxieeducation/xgboost?pixel)](https://github.com/igrigorik/ga-beacon)
 
 
 XGBoost is an implementation of the famous gradient boosting algorithm. It has won numerous [Kaggle competitions](https://twitter.com/sedielem/status/601707990819962880) and stands above the rest as a tool that is fast and performant. 
