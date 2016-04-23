@@ -37,7 +37,7 @@ pip install xgboost
 * [Prediction Example](http://xgboost.readthedocs.org/en/latest/python/python_intro.html#prediction)
 
 #####Tuning XGB
-* [Presentation by former Kaggle #1 Owen Zhang](http://www.slideshare.net/odsc/owen-zhangopen-sourcetoolsanddscompetitions1/12) (slides 12 - 13)
+* [Presentation by former Kaggle #1 Owen Zhang](http://www.slideshare.net/odsc/owen-zhangopen-sourcetoolsanddscompetitions1/12) (slides 12 - 13, very useful)
 * [Tuning tips](http://xgboost.readthedocs.org/en/latest/param_tuning.html)
 
 ----------
