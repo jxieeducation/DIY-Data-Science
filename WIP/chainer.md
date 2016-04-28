@@ -1,6 +1,7 @@
 ##The DIY Guide to Chainer
 
-[![Analytics](https://ga-beacon.appspot.com/UA-61611403-2/jxieeducation/chainer?pixel)](https://github.com/igrigorik/ga-beacon)]
+[![Analytics](https://ga-beacon.appspot.com/UA-61611403-2/jxieeducation/chainer?pixel)](https://github.com/igrigorik/ga-beacon)
+
 
 Chainer is another deep learning library (released June 8, 2015) that is not as well known as Tensorflow or Torch. However, it is by far the extremely intuitive and flexible. This is because Chainer adopts a [Define-BY-Run](http://www.slideshare.net/beam2d/introduction-to-chainer-a-flexible-framework-for-deep-learning/12) model as opposed to a [Define-AND-Run](http://www.slideshare.net/beam2d/introduction-to-chainer-a-flexible-framework-for-deep-learning/9) model. This paradigm gives you immense control of your network, and makes deep nets insanely easy to control and debug.
 
