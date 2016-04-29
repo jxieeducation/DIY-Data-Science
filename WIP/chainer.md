@@ -3,7 +3,7 @@
 [![Analytics](https://ga-beacon.appspot.com/UA-61611403-2/jxieeducation/chainer?pixel)](https://github.com/igrigorik/ga-beacon)
 
 
-Chainer is another deep learning library (released June 8, 2015) that is not as well known as Tensorflow or Torch. However, it is by far the extremely intuitive and flexible. This is because Chainer adopts a [Define-BY-Run](http://www.slideshare.net/beam2d/introduction-to-chainer-a-flexible-framework-for-deep-learning/12) model as opposed to a [Define-AND-Run](http://www.slideshare.net/beam2d/introduction-to-chainer-a-flexible-framework-for-deep-learning/9) model. This paradigm gives you immense control of your network, and makes deep nets insanely easy to control and debug.
+Chainer is a deep learning framework (released June 8, 2015) that is not as well known as Tensorflow or Torch. However, it is extremely intuitive and flexible. This is because Chainer adopts a [Define-BY-Run](http://www.slideshare.net/beam2d/introduction-to-chainer-a-flexible-framework-for-deep-learning/12) model as opposed to a [Define-AND-Run](http://www.slideshare.net/beam2d/introduction-to-chainer-a-flexible-framework-for-deep-learning/9) model. This paradigm gives you immense control of your network, and makes deep nets easy to debug and experiment with.
 
 _[Fun fact](https://twitter.com/ChainerOfficial/status/678087618035236865): Chainer is very popular in the Japanese deep learning community_
 
@@ -11,14 +11,14 @@ _[Fun fact](https://twitter.com/ChainerOfficial/status/678087618035236865): Chai
 ```
 pip install chainer
 ```
-[Install from source](http://docs.chainer.org/en/stable/install.html#install-chainer-from-source) or [Install with CUDA](http://docs.chainer.org/en/stable/install.html#install-chainer-from-source)
+Install [from source](http://docs.chainer.org/en/stable/install.html#install-chainer-from-source) or [with CUDA](http://docs.chainer.org/en/stable/install.html#install-chainer-with-cuda)
 
 ----------
 
 ###Hello World
 #####Introduction 
-* Define-BY-Run vs Define-AND-Run - [Short explanation](http://docs.chainer.org/en/stable/tutorial/basic.html#core-concept) & [Notes](http://www.slideshare.net/beam2d/introduction-to-chainer-a-flexible-framework-for-deep-learning/9) (slides 9 - 15)
-* Basics concepts - [Overview](http://www.slideshare.net/beam2d/introduction-to-chainer-a-flexible-framework-for-deep-learning/20)
+* Define-BY-Run vs Define-AND-Run - [Short intro](http://docs.chainer.org/en/stable/tutorial/basic.html#core-concept) & [Notes](http://www.slideshare.net/beam2d/introduction-to-chainer-a-flexible-framework-for-deep-learning/9) (slides 9 - 15) & [My explanation](https://gist.github.com/jxieeducation/844adc8ef212d0bdd028429c72e7f5cc)
+* Basics concepts - [Overview](http://www.slideshare.net/beam2d/introduction-to-chainer-a-flexible-framework-for-deep-learning/20) (slides 20 - 23)
 	* Variable (like Placeholders in TF, Tensors in Torch) - [Example](http://docs.chainer.org/en/stable/tutorial/basic.html#forward-backward-computation) & [Documentation](http://docs.chainer.org/en/stable/reference/core/variable.html)
 	* Links (like Layers in Keras and Torch) - [Example](http://docs.chainer.org/en/stable/tutorial/basic.html#links) & [Documentation](http://docs.chainer.org/en/stable/reference/links.html)
 	* Neural network - [Example](http://docs.chainer.org/en/stable/tutorial/basic.html#write-a-model-as-a-chain) & [MNIST MLP code](https://github.com/pfnet/chainer/blob/master/examples/mnist/net.py) & [AlexNet code](https://github.com/pfnet/chainer/blob/master/examples/imagenet/alex.py)
@@ -54,8 +54,8 @@ pip install chainer
 #####Convolutional NN
 * [ImageNet](https://github.com/pfnet/chainer/tree/master/examples/imagenet), [Karpathy blog explanation](http://karpathy.github.io/2014/09/02/what-i-learned-from-competing-against-a-convnet-on-imagenet/)
 * [Convolutional autoencoder](https://gist.github.com/ktnyt/58e015dd9ff33049da5a)
-* [DCGAN](https://mattya.github.io/chainer-DCGAN/), [Anime face generation](https://mattya.github.io/chainer-DCGAN/) (trained on manga)
-* [Gogh](https://github.com/mattya/chainer-gogh) (Implementation of "A neural algorithm of Artistic style")
+* [DCGAN](https://mattya.github.io/chainer-DCGAN/), [Demo](https://mattya.github.io/chainer-DCGAN/) (Anime face generation)
+* [Gogh](https://github.com/mattya/chainer-gogh) (Generating Van Gogh paintings), [Demo](https://raw.githubusercontent.com/mattya/chainer-gogh/master/sample_images/im0.png)
 * [R-CNN](http://sinhrks.hatenablog.com/entry/2015/07/05/224745), [Faster R-CNN](https://github.com/mitmul/chainer-fast-rcnn), [Demo](https://raw.githubusercontent.com/wiki/mitmul/chainer-fast-rcnn/images/result.jpg)
 * [Siamese network](https://github.com/mitmul/chainer-siamese)
 * [Filter visualization](https://github.com/mitmul/chainer-conv-vis), [Demo](https://raw.githubusercontent.com/wiki/mitmul/chainer-conv-vis/images/result.png)
@@ -68,5 +68,5 @@ pip install chainer
 
 #####Reinforcement Learning
 * [DQN](https://github.com/ugo-nama-kun/DQN-chainer) (Learns to play games), [Platformer demo](https://dl.dropboxusercontent.com/u/59329025/images/20150719_173407.gif)
-* [DQN alternative example](https://github.com/ugo-nama-kun/DQN-chainer), [Pong demo](https://www.youtube.com/watch?v=N813o-Xb6S8)
+* [Another DQN example](https://github.com/ugo-nama-kun/DQN-chainer), [Pong demo](https://www.youtube.com/watch?v=N813o-Xb6S8)
 
