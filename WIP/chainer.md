@@ -2,7 +2,7 @@
 
 [![Analytics](https://ga-beacon.appspot.com/UA-61611403-2/jxieeducation/chainer?pixel)](https://github.com/igrigorik/ga-beacon)
 
-_Please feel free to pull [Requests](https://github.com/jxieeducation/DIY-Data-Science/pulls) for good resources, create [Issues](https://github.com/jxieeducation/DIY-Data-Science/issues) for any feedback! Thanks!_
+_Please make [Pull Requests](https://github.com/jxieeducation/DIY-Data-Science/pulls) for good resources, or create [Issues](https://github.com/jxieeducation/DIY-Data-Science/issues) for any feedback! Thanks!_
 
 ----------
 
