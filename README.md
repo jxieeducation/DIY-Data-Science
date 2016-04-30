@@ -3,3 +3,4 @@ Resources for anyone to learn data science. Self education is best possible gift
 
 ###Guides:
 [XGBoost](https://github.com/jxieeducation/DIY-Nerd---Data-Science-Resources/blob/master/xgboost.md)
+[Chainer](https://github.com/jxieeducation/DIY-Nerd---Data-Science-Resources/blob/master/chainer.md)
