@@ -1,17 +1,10 @@
+##The DIY Guide to Seq2Seq
 
-paper:
-http://www.cinjon.com/papers-multimodal-seq2seq/
+[![Analytics](https://ga-beacon.appspot.com/UA-61611403-2/jxieeducation/seq2seq?pixel)](https://github.com/igrigorik/ga-beacon)
 
+_Please make [Pull Requests](https://github.com/jxieeducation/DIY-Data-Science/pulls) for good resources, or create [Issues](https://github.com/jxieeducation/DIY-Data-Science/issues) for any feedback! Thanks!_
 
-application:
-http://www.wired.com/2015/06/google-made-chatbot-debates-meaning-life/
-http://googleresearch.blogspot.com/2015/11/computer-respond-to-this-email.html
-
-
-
-blog: 
-http://domkaukinen.com/tag/seq2seq/
-https://indico.io/blog/sequence-modeling-neuralnets-part1/
+----------
 
 
 
