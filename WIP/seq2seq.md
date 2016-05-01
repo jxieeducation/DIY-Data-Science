@@ -8,6 +8,8 @@ _Please make [Pull Requests](https://github.com/jxieeducation/DIY-Data-Science/p
 
 Seq2Seq solves the traditional fixed-size input problem thatEffective Approaches to Attention-based Neural Machine Translation prevents traditional DNNs from mastering sequence based tasks such as translation and question answering. It has been shown to have state of the art performances in English-French and English-German translations and in responding to short questions. 
 
+![Generated dialogue](http://d3kbpzbmcynnmx.cloudfront.net/wp-content/uploads/2016/04/Screen-Shot-2016-04-04-at-6.36.59-PM.png)
+
 ##Hello World
 
 Seq2Seq was first introduced in late 2014 by 2 papers ([Sequence to Sequence Learning with Neural Networks](http://arxiv.org/pdf/1409.3215v3.pdf) and [Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation](http://arxiv.org/pdf/1406.1078.pdf)) from Google Brain and Yoshua Bengio's group. The two papers took a similar approach in machine translation, in which Seq2Seq was developed upon.
@@ -38,6 +40,7 @@ For more information about encoding or decoding, refer to [Incorporating Copying
 * Notes that the performance deteriorates rapidly as the length of an input sentence increases
 
 ####Attention Mechanism
+![Attention diagram](https://camo.githubusercontent.com/0e2e4e5fb2dd47846c2fe027737a5df5e711df1b/687474703a2f2f6936342e74696e797069632e636f6d2f6132727733642e706e67)
 #####[Neural Machine Translation By Jointly Learning To Align And Translate](http://arxiv.org/pdf/1409.0473v6.pdf)
 * Introduces the attention mechanism
 * Proposes that the fixed length embedding is the bottleneck

@@ -77,6 +77,7 @@ http://arxiv.org/pdf/1511.06114v1.pdf
 blog: 
 http://domkaukinen.com/tag/seq2seq/
 https://indico.io/blog/sequence-modeling-neuralnets-part1/
+http://www.wildml.com/2016/04/deep-learning-for-chatbots-part-1-introduction/
 
 
 projects:
