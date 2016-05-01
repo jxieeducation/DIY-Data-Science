@@ -17,6 +17,7 @@ Seq2Seq was first introduced in late 2014 by 2 papers ([Sequence to Sequence Lea
 Seq2Seq uses RNNs to map an input sequence to an output sequence through encoding the input and then decoding the output. 
 
 ![seq2seq diagram](https://i.gyazo.com/d1d750f3b56f9b8948f42f8273f7a36a.png)
+
 For instance, "A B C EOS" can be mapped to "W X Y Z EOS" (EOS = End of Sentence)
 
 
