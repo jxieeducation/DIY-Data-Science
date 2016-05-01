@@ -6,7 +6,7 @@ _Please make [Pull Requests](https://github.com/jxieeducation/DIY-Data-Science/p
 
 ----------
 
-Seq2Seq solves the traditional fixed-size input problem that prevents traditional DNNs from mastering sequence based tasks such as translation and question answering. It has been shown to have state of the art performances in English-French and English-German translations and in responding to short questions. 
+Seq2Seq solves the traditional fixed-size input problem thatEffective Approaches to Attention-based Neural Machine Translation prevents traditional DNNs from mastering sequence based tasks such as translation and question answering. It has been shown to have state of the art performances in English-French and English-German translations and in responding to short questions. 
 
 ##Hello World
 
@@ -38,7 +38,7 @@ For more information about encoding or decoding, refer to [Incorporating Copying
 * Notes that the performance deteriorates rapidly as the length of an input sentence increases
 
 ####Attention Mechanism
-#####[NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE](http://arxiv.org/pdf/1409.0473v6.pdf)
+#####[Neural Machine Translation By Jointly Learning To Align And Translate](http://arxiv.org/pdf/1409.0473v6.pdf)
 * Introduces the attention mechanism
 * Proposes that the fixed length embedding is the bottleneck
 * Instead of generating a fixed size context vector, creates a variable sized list of hidden states
@@ -52,20 +52,46 @@ For more information about encoding or decoding, refer to [Incorporating Copying
 #####[Sequence to Sequence Learning with Neural Networks](http://arxiv.org/pdf/1409.3215v3.pdf) 
 #####[Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation](http://arxiv.org/pdf/1406.1078.pdf))
 
+#####[Effective Approaches to Attention-based Neural Machine Translation](http://stanford.edu/~lmthang/data/papers/emnlp15_attn.pdf)
+- Focuses on improving the attention mechanism proposed from [the attention paper above](#Neural-Machine-Translation-By-Jointly-Learning-To-Align-And-Translate)
+- Defines a global attention model that is a simplified derivation
+- Defines a local attention model that focuses only on a small subset of the source positions per target word to reduce computation for long inputs
+
+#####[MULTI-TASK SEQUENCE TO SEQUENCE LEARNING](http://arxiv.org/pdf/1511.06114v1.pdf)
+- Trains the same encoder and/or decoder on many different tasks at the same time
+- Can be done as one (encoder) to many (decoder), many to one and many to many for tasks like image captioning and machine translation
+- Trains different tasks at the same time, each N minibatches at a time 
 
 ####Dialog and Q&A
 #####[A Neural Conversational Model](http://arxiv.org/pdf/1506.05869v1.pdf)
-* The output is now the answer to a question
+* Instead of machine translation, maps input (question) to the output (answer)
 * Achieves intelligent results from IT Helpdesk and movie subtitles datasets
 * [Demo](https://twitter.com/graphific/status/613941774806044672)
+
+#####[Neural Responding Machine for Short-Text Conversation](https://www.aclweb.org/anthology/P/P15/P15-1152.pdf)
+- Built a single-conversation (1 post to 1 reply) training dataset off of Weibo (chinese twitter)'s
+- Used separate embeddings for post and reply, because words had different distributions
+- Defines attention based decoding as NRM-local and non-attention based decoding as NRM-global (sec 3.2)
+- Creates a hybrid model by combing NRM-local and -global, which naively concats the context vectors (sec 3.3)
 
 #####[Incorporating Copying Mechanism in Sequence-to-Sequence Learning](http://arxiv.org/pdf/1603.06393.pdf)
 * Introduces a copy mechanism that decides when words should be repeated from question to answer
 * e.g. Q: "My name is Jack!" A: "Hello, Jack!"
-* In the attention calculation, create an additional calculation to decide the probability of coping the input word
+* In the attention calculation, create an additional calculation to decide the probability of copying the input word
 
+####Autoencoder and Pretraining
+#####[Semi-supervised Sequence Learning](http://arxiv.org/pdf/1511.01432v1.pdf)
+- Uses a Seq2Seq autoencoder as a pre-training step to improve stability in training tasks with LSTM such as document classification
 
 ###Extensions
 #####[Order Matters: Sequence to Sequence for Sets](http://arxiv.org/pdf/1511.06391.pdf)
 * Input encoding uses a more complicated READ/PROCESS/WRITE procedure, so that the context vector does not depend on the order of the inputs
 * Output order is optimized by grid search to find the optimal output
+
+###Resources
+####Datasets
+
+####Frameworks
+#####Torch
+#####Tensorflow
+#####Keras

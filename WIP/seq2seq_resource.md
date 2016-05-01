@@ -52,22 +52,26 @@ http://arxiv.org/pdf/1603.06393.pdf
 - combines attention with copying, linear addition of probability
 Prob(“Jebara”) = Prob(“Jebara”, g) + Prob(“Jebara”, c)
 
-
-http://arxiv.org/abs/1602.06023 
-http://www.cinjon.com/papers-multimodal-seq2seq/
-http://stanford.edu/~lmthang/data/papers/emnlp15_attn.pdf
 https://www.aclweb.org/anthology/P/P15/P15-1152.pdf
-http://arxiv.org/pdf/1506.06714v1.pdf
-http://arxiv.org/pdf/1502.03044.pdf
-https://papers.nips.cc/paper/5635-grammar-as-a-foreign-language.pdf
+- Built a single-conversation (1 post to 1 reply) training dataset off of Weibo (chinese twitter)'s
+- Used separate embeddings for post and reply, because words had different distributions
+- Defines attention based decoding as NRM-local and non-attention based decoding as NRM-global (sec 3.2) (not related to Effective Approaches...)
+- Creates a hybrid model by combing NRM-local and -global, which naively concats the context vectors (sec 3.3)
 
-maybe?
-http://arxiv.org/pdf/1511.06931.pdf
-http://arxiv.org/abs/1508.06615 - attention
+http://stanford.edu/~lmthang/data/papers/emnlp15_attn.pdf
+- Focuses on improving the attention mechanism proposed from [the attention paper above]
+- Defines a global attention model that is a simplified derivation from the paper
+- Defines a local attention model that focuses only on a small subset of the source positions per target word to reduce computation for long inputs
 
-application:
-http://www.wired.com/2015/06/google-made-chatbot-debates-meaning-life/
-http://googleresearch.blogspot.com/2015/11/computer-respond-to-this-email.html
+
+http://www.cinjon.com/papers-multimodal-seq2seq/
+http://arxiv.org/pdf/1511.01432v1.pdf 
+- can use Seq2Seq autoencoder as a pre-training step to improve stability in training tasks with LSTM such as document classification
+
+http://arxiv.org/pdf/1511.06114v1.pdf
+- Trains the same encoder and decoder on many different tasks at the same time
+- Can be done as one (encoder) to many (decoder), many to one and many to many for tasks like image captioning and machine translation
+- Trains different tasks at the same time, each N minibatches at a time 
 
 
 blog: 
