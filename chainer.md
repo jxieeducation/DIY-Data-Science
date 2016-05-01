@@ -60,7 +60,7 @@ Install [from source](http://docs.chainer.org/en/stable/install.html#install-cha
 * [ImageNet](https://github.com/pfnet/chainer/tree/master/examples/imagenet), [Karpathy blog](http://karpathy.github.io/2014/09/02/what-i-learned-from-competing-against-a-convnet-on-imagenet/)
 * [Convolutional autoencoder](https://gist.github.com/ktnyt/58e015dd9ff33049da5a)
 * [DCGAN](https://github.com/mattya/chainer-DCGAN/), [Demo](https://mattya.github.io/chainer-DCGAN/) (Anime face generation), [Sample](https://github.com/mattya/chainer-DCGAN/blob/master/sample1.png)
-* [Gogh](https://github.com/mattya/chainer-gogh) (Generating Van Gogh paintings), [Sample](https://raw.githubusercontent.com/mattya/chainer-gogh/master/sample_images/im0.png)
+* [Deep Dream](https://github.com/mattya/chainer-gogh) (Generating Van Gogh paintings), [Sample](https://raw.githubusercontent.com/mattya/chainer-gogh/master/sample_images/im0.png)
 * [R-CNN](http://sinhrks.hatenablog.com/entry/2015/07/05/224745), [Faster R-CNN](https://github.com/mitmul/chainer-fast-rcnn), [Sample](https://raw.githubusercontent.com/wiki/mitmul/chainer-fast-rcnn/images/result.jpg)
 * [Siamese network](https://github.com/mitmul/chainer-siamese) (contrastive loss)
 * [Filter visualization](https://github.com/mitmul/chainer-conv-vis), [Sample](https://raw.githubusercontent.com/wiki/mitmul/chainer-conv-vis/images/result.png)
