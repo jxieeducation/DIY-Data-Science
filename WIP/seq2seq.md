@@ -53,7 +53,7 @@ For more information about encoding or decoding, refer to [Incorporating Copying
 #####[Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation](http://arxiv.org/pdf/1406.1078.pdf))
 
 #####[Effective Approaches to Attention-based Neural Machine Translation](http://stanford.edu/~lmthang/data/papers/emnlp15_attn.pdf)
-- Focuses on improving the attention mechanism proposed from [the attention paper above](##neural-machine-translation-by-jointly-learning-to-align-and-translate)
+- Focuses on improving the attention mechanism proposed from [the attention paper above](#neural-machine-translation-by-jointly-learning-to-align-and-translate)
 - Defines a global attention model that is a simplified derivation
 - Defines a local attention model that focuses only on a small subset of the source positions per target word to reduce computation for long inputs
 
