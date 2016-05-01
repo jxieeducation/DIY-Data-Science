@@ -8,7 +8,7 @@ _Please make [Pull Requests](https://github.com/jxieeducation/DIY-Data-Science/p
 
 Seq2Seq solves the traditional fixed-size input problem thatEffective Approaches to Attention-based Neural Machine Translation prevents traditional DNNs from mastering sequence based tasks such as translation and question answering. It has been shown to have state of the art performances in English-French and English-German translations and in responding to short questions. 
 
-![Generated dialogue](http://d3kbpzbmcynnmx.cloudfront.net/wp-content/uploads/2016/04/Screen-Shot-2016-04-04-at-6.36.59-PM.png)
+![Generated dialogue](http://d3kbpzbmcynnmx.cloudfront.net/wp-content/uploads/2016/04/Screen-Shot-2016-04-04-at-6.36.59-PM.png =500)
 
 ##Hello World
 
@@ -23,14 +23,17 @@ Seq2Seq uses RNNs (usually LSTMs) to map an input sequence to an output sequence
 For instance, "A B C EOS" can be mapped to "W X Y Z EOS" (EOS = End of Sentence)
 
 ####Encoding
+![encoding diagram](http://s32.postimg.org/mtvq063j9/Screen_Shot_2016_05_01_at_9_21_55_AM.png)
 The variable length input sequence transformed by the encoder RNN into the context vector (**c**). **c** is usually the last hidden state of the RNN or a weighed sum of the hidden states.
 
 ####Decoding
+![decoding diagram](http://s32.postimg.org/nad9blzs5/Screen_Shot_2016_05_01_at_9_23_18_AM.png)
 The decoder RNN unfolds **c**. This is usually done by a greedy approach of feeding back the word with the highest probability or by a beam search which looks at multiple words before determining the output sequence. 
 
 For more information about encoding or decoding, refer to [Incorporating Copying Mechanism in Sequence-to-Sequence Learning](http://arxiv.org/pdf/1603.06393.pdf) section 2.1. 
 
 #####[Sequence to Sequence Learning with Neural Networks](http://arxiv.org/pdf/1409.3215v3.pdf)
+![Sequence diagram](http://s32.postimg.org/trkq2av6t/Screen_Shot_2016_05_01_at_9_26_12_AM.png)
 * Recommends reversing the input sequence ("ABC" is entered as "CBA")
 * Explains that backpropagation has an easier time "establishing communication" between the source sentence and the target sentence
 * Achieves state of the art score on English-French translation, beats state of the art score if the output is rescored
