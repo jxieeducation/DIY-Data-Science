@@ -5,6 +5,15 @@
 _Please make [Pull Requests](https://github.com/jxieeducation/DIY-Data-Science/pulls) for good resources, or create [Issues](https://github.com/jxieeducation/DIY-Data-Science/issues) for any feedback! Thanks!_
 
 ----------
+###Table Of Contents
+* [Main Idea](#main-idea)
+* [Applications](#applications)
+* [Resources](#resources)
+	* [Datasets](#datasets)
+	* [Code Examples](#code-examples)
+	* [Blogs](#blogs)
+
+----------
 
 Seq2Seq solves the traditional fixed-size input problem thatEffective Approaches to Attention-based Neural Machine Translation prevents traditional DNNs from mastering sequence based tasks such as translation and question answering. It has been shown to have state of the art performances in English-French and English-German translations and in responding to short questions. 
 
@@ -99,8 +108,32 @@ For more information about encoding or decoding, refer to [Incorporating Copying
 
 ###Resources
 ####Datasets
+#####Machine Translation
+* [WMT15](http://www.statmt.org/wmt15/translation-task.html)
+* [Eng-Germ](https://github.com/harvardnlp/seq2seq-attn/tree/master/data)
 
-####Frameworks
-#####Torch
-#####Tensorflow
-#####Keras
+#####Dialog
+* [Cornel Movie Dialog](http://www.mpi-sws.org/~cristian/Cornell_Movie-Dialogs_Corpus.html)
+* [Toy dataset](https://github.com/eriche2016/seq2seq-1/tree/master/data)
+* [Bible](https://github.com/adamchanson/seq2seq/tree/master/data)
+
+####Code Examples
+#####Machine Translation
+* [Seq2seq-attention](https://github.com/harvardnlp/seq2seq-attn) (Torch)
+* [Seq2seq](https://github.com/ma2rten/seq2seq) (Raw implementation)
+
+#####Dialog
+* [Neuralconvo](https://github.com/macournoyer/neuralconvo) (Torch)
+* [Seq2seq-1](https://github.com/eriche2016/seq2seq-1) (Torch)
+* [Neural-chatbot](https://github.com/inikdom/neural-chatbot) (TF)
+* [Seq2seq](https://github.com/adamchanson/seq2seq) (Theano)
+* [Debug-seq2seq](https://github.com/nicolas-ivanov/debug_seq2seq) (Keras)
+* [Seq2seq](https://github.com/kenkov/seq2seq) (Chainer)
+* [Tf_seq2seq_chatbot](https://github.com/nicolas-ivanov/tf_seq2seq_chatbot) (TF)
+
+####Blogs
+* Domkaukinen - [part1](http://domkaukinen.com/part-1-implementing-a-seq2seq-chatbot-in-torch/), [part2](http://domkaukinen.com/part-2-implementing-seq2seq-chatbot-resolving-memory-issues/), [part3](http://domkaukinen.com/part-3/)
+* Indico - [part1](https://indico.io/blog/sequence-modeling-neuralnets-part1/), [part2](https://indico.io/blog/sequence-modeling-neural-networks-part2-attention-models/)
+* WildML - [part1](http://www.wildml.com/2016/04/deep-learning-for-chatbots-part-1-introduction/)
+
+###[Super Short Feedback Survey](https://docs.google.com/forms/u/0/d/1lV80v2z0f2tlolGNLpofEHX6Peu0uiYhxWTs6J61mBg) (Pretty please!)
