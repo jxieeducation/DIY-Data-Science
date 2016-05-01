@@ -21,7 +21,7 @@ Seq2Seq solves the traditional fixed-size input problem thatEffective Approaches
 
 ##Hello World
 
-Seq2Seq was first introduced in late 2014 by 2 papers ([Sequence to Sequence Learning with Neural Networks](http://arxiv.org/pdf/1409.3215v3.pdf) and [Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation](http://arxiv.org/pdf/1406.1078.pdf)) from Google Brain and Yoshua Bengio's group. The two papers took a similar approach in machine translation, in which Seq2Seq was developed upon.
+Seq2Seq was first introduced in late 2014 by 2 papers ([Sequence to Sequence Learning with Neural Networks](#sequence-to-sequence-learning-with-neural-networks) and [Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation](#learning-phrase-representations-using-rnn-encoderdecoder-for-statistical-machine-translation)) from Google Brain and Yoshua Bengio's group. The two papers took a similar approach in machine translation, in which Seq2Seq was developed upon.
 
 ###Main Idea
 
@@ -33,10 +33,12 @@ For instance, "A B C EOS" can be mapped to "W X Y Z EOS" (EOS = End of Sentence)
 
 ####Encoding
 ![encoding diagram](http://s32.postimg.org/mtvq063j9/Screen_Shot_2016_05_01_at_9_21_55_AM.png)
+
 The variable length input sequence transformed by the encoder RNN into the context vector (**c**). **c** is usually the last hidden state of the RNN or a weighed sum of the hidden states.
 
 ####Decoding
 ![decoding diagram](http://s32.postimg.org/nad9blzs5/Screen_Shot_2016_05_01_at_9_23_18_AM.png)
+
 The decoder RNN unfolds **c**. This is usually done by a greedy approach of feeding back the word with the highest probability or by a beam search which looks at multiple words before determining the output sequence. 
 
 For more information about encoding or decoding, refer to [Incorporating Copying Mechanism in Sequence-to-Sequence Learning](http://arxiv.org/pdf/1603.06393.pdf) section 2.1. 
@@ -64,8 +66,8 @@ For more information about encoding or decoding, refer to [Incorporating Copying
 
 ###Applications
 ####Machine Translation
-#####[Sequence to Sequence Learning with Neural Networks](http://arxiv.org/pdf/1409.3215v3.pdf) 
-#####[Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation](http://arxiv.org/pdf/1406.1078.pdf))
+#####[Sequence to Sequence Learning with Neural Networks](#sequence-to-sequence-learning-with-neural-networks) 
+#####[Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation](#learning-phrase-representations-using-rnn-encoderdecoder-for-statistical-machine-translation)
 
 #####[Effective Approaches to Attention-based Neural Machine Translation](http://stanford.edu/~lmthang/data/papers/emnlp15_attn.pdf)
 - Focuses on improving the attention mechanism proposed from [the attention paper above](#neural-machine-translation-by-jointly-learning-to-align-and-translate)
@@ -86,7 +88,7 @@ For more information about encoding or decoding, refer to [Incorporating Copying
 
 #####[Neural Responding Machine for Short-Text Conversation](https://www.aclweb.org/anthology/P/P15/P15-1152.pdf)
 ![hybrid model](http://s32.postimg.org/muq4txug5/Screen_Shot_2016_05_01_at_9_31_49_AM.png)
-- Built a single-conversation (1 post to 1 reply) training dataset off of Weibo (chinese twitter)'s
+- Built a single-conversation (1 post to 1 reply) training dataset off of Weibo (chinese twitter)
 - Used separate embeddings for post and reply, because words had different distributions
 - Defines attention based decoding as NRM-local and non-attention based decoding as NRM-global (sec 3.2)
 - Creates a hybrid model by combing NRM-local and -global, which naively concats the context vectors (sec 3.3)
