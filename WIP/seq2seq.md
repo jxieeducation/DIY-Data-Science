@@ -8,7 +8,7 @@ _Please make [Pull Requests](https://github.com/jxieeducation/DIY-Data-Science/p
 
 Seq2Seq solves the traditional fixed-size input problem thatEffective Approaches to Attention-based Neural Machine Translation prevents traditional DNNs from mastering sequence based tasks such as translation and question answering. It has been shown to have state of the art performances in English-French and English-German translations and in responding to short questions. 
 
-![Generated dialogue](http://d3kbpzbmcynnmx.cloudfront.net/wp-content/uploads/2016/04/Screen-Shot-2016-04-04-at-6.36.59-PM.png =500)
+![Generated dialogue](http://s32.postimg.org/6e20by8v9/Screen_Shot_2016_05_01_at_9_29_05_AM.png)
 
 ##Hello World
 
@@ -63,7 +63,8 @@ For more information about encoding or decoding, refer to [Incorporating Copying
 - Defines a global attention model that is a simplified derivation
 - Defines a local attention model that focuses only on a small subset of the source positions per target word to reduce computation for long inputs
 
-#####[MULTI-TASK SEQUENCE TO SEQUENCE LEARNING](http://arxiv.org/pdf/1511.06114v1.pdf)
+#####[Multi-Task Sequence to Sequence Learning](http://arxiv.org/pdf/1511.06114v1.pdf)
+![many to one](http://s32.postimg.org/mna9f96xx/Screen_Shot_2016_05_01_at_9_30_27_AM.png)
 - Trains the same encoder and/or decoder on many different tasks at the same time
 - Can be done as one (encoder) to many (decoder), many to one and many to many for tasks like image captioning and machine translation
 - Trains different tasks at the same time, each N minibatches at a time 
@@ -75,6 +76,7 @@ For more information about encoding or decoding, refer to [Incorporating Copying
 * [Demo](https://twitter.com/graphific/status/613941774806044672)
 
 #####[Neural Responding Machine for Short-Text Conversation](https://www.aclweb.org/anthology/P/P15/P15-1152.pdf)
+![hybrid model](http://s32.postimg.org/muq4txug5/Screen_Shot_2016_05_01_at_9_31_49_AM.png)
 - Built a single-conversation (1 post to 1 reply) training dataset off of Weibo (chinese twitter)'s
 - Used separate embeddings for post and reply, because words had different distributions
 - Defines attention based decoding as NRM-local and non-attention based decoding as NRM-global (sec 3.2)
@@ -91,6 +93,7 @@ For more information about encoding or decoding, refer to [Incorporating Copying
 
 ###Extensions
 #####[Order Matters: Sequence to Sequence for Sets](http://arxiv.org/pdf/1511.06391.pdf)
+![READ write](http://s32.postimg.org/t34kkwpyd/Screen_Shot_2016_05_01_at_9_34_23_AM.png)
 * Input encoding uses a more complicated READ/PROCESS/WRITE procedure, so that the context vector does not depend on the order of the inputs
 * Output order is optimized by grid search to find the optimal output
 
