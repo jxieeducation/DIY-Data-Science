@@ -91,3 +91,5 @@ pip install xgboost
 #####Distributed training
 * XGBoost provides a parallelization option called All Reduce
 * [Official explanation](http://xgboost.readthedocs.org/en/latest/tutorial/aws_yarn.html)
+
+###[Super Short Feedback Survey](https://docs.google.com/forms/u/0/d/1pI5C6eYf0BpE_6pF360gKkFsyxgI5iGSvFe4RPS5N9M/) (Pretty please!)

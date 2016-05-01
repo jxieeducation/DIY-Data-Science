@@ -75,3 +75,4 @@ Install [from source](http://docs.chainer.org/en/stable/install.html#install-cha
 * [DQN](https://github.com/ugo-nama-kun/DQN-chainer), [Pong demo](https://www.youtube.com/watch?v=N813o-Xb6S8)
 * [Another DQN example](https://github.com/ugo-nama-kun/DQN-chainer), [Platformer demo](https://dl.dropboxusercontent.com/u/59329025/images/20150719_173407.gif)
 
+###[Super Short Feedback Survey](https://docs.google.com/forms/u/0/d/1clz8SPFca-K1aNWFdrrO0QQlSGkLcYyd_F7oRGWq8FA/) (Pretty please!)
