@@ -1,93 +1,41 @@
+##The DIY Guide to Seq2Seq
 
-paper:
+[![Analytics](https://ga-beacon.appspot.com/UA-61611403-2/jxieeducation/seq2seq?pixel)](https://github.com/igrigorik/ga-beacon)
 
-main
+_Please make [Pull Requests](https://github.com/jxieeducation/DIY-Data-Science/pulls) for good resources, or create [Issues](https://github.com/jxieeducation/DIY-Data-Science/issues) for any feedback! Thanks!_
 
-http://arxiv.org/pdf/1406.1078.pdf
-cho et al. Eng - French translation
-Introduces encoder-decoder framework (good graph on page 2)
-2 use cases: 1. seq to seq 2. score target sequence prob
-2–D embedding of the learned phrase representation
-the performance of a basic encoder–decoder deteriorates rapidly as the length of an input sentence increases
-make note of greedy vs beam search in prediction
+----------
 
+Seq2Seq solves the traditional fixed-size input problem that prevents traditional DNNs from mastering sequence based tasks such as translation and question answering. It has been shown to have state of the art performances in English-French and English-German translations and in responding to short questions. 
 
-http://arxiv.org/abs/1409.3215
-- it helps to reverse the input sequence, LSTM learns much better when the source sentences are reversed
-- backpropagation has an easier time “establishing communication” between the source sentence and the target sentence
+###Hello World
 
+Seq2Seq was first introduced in late 2014 by 2 papers ([Sequence to Sequence Learning with Neural Networks](http://arxiv.org/pdf/1409.3215v3.pdf) and [Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation](http://arxiv.org/pdf/1406.1078.pdf)) from Google Brain and Yoshua Bengio's group. The two papers took a similar approach in machine translation, in which Seq2Seq was developed upon.
 
+####Main Idea
 
-http://arxiv.org/pdf/1409.0473v6.pdf
-introduces attention framework!!
-propose that the fixed length embedding is the bottleneck 
-it does not attempt to encode a whole input sentence into a single fixed-length vector.
-Instead, it encodes the input sentence into a sequence of vectors and chooses a subset of these vectors adaptively while decoding the translation.
-The new architecture consists of a bidirectional RNN as an encoder (Sec. 3.2) and a decoder that emulates searching through a source sentence during decoding a translation
-Encoder (bidirectional) creates an annotation of a word (forward + backward). Annotations are a representation of what role a input word plays in the input sentence. 
-In decoding, the next word in the sequence is a function of (y_i-1, i_t, c_i). c_i is a linear combination of annotations.
-Good demo on page 7
+Seq2Seq uses RNNs (usually LSTMs) to map an input sequence to an output sequence through encoding the input and then decoding the output. 
 
-http://arxiv.org/pdf/1506.05869v1.pdf
-models IT helpdesk, OpenSubtitles dataset
-n-gram models improve performance
-good examples for demo
+![seq2seq diagram](https://i.gyazo.com/d1d750f3b56f9b8948f42f8273f7a36a.png)
 
+For instance, "A B C EOS" can be mapped to "W X Y Z EOS" (EOS = End of Sentence)
 
-less main
+#####Encoding
+The variable length input sequence transformed by the encoder RNN into the context vector (**c**). **c** is usually the last hidden state of the RNN or a weighed sum of the hidden states.
 
-http://arxiv.org/pdf/1511.06391.pdf
-- handles inputting sets (like a set of numbers to sort them)
-- input sets: swapping two elements xi and xj in the set X
-	- uses attention mechanism instead
-	- READ - Process - Write
-	- process encodes input to memory that is invariant to order of inputs, attention mechanism
-	- write block - LSTM pointer network
-- output sets: find optimal way to order the set via combinatorics
+#####Decoding
+The decoder RNN unfolds **c**. This is usually done by a greedy approach of feeding back the word with the highest probability or by a beam search which looks at multiple words before determining the output sequence. 
 
-http://arxiv.org/pdf/1603.06393.pdf
-- copying, in which certain segments in the input sequence are selectively replicated in the output sequence --> CopyNET
-- COPYNET can nicely integrate the regular way of word generation in the decoder with the new copying mechanism which can choose subsequences in the input sequence and put them at proper places in the output sequence
-- related to rote memorization
-- combines attention with copying, linear addition of probability
-Prob(“Jebara”) = Prob(“Jebara”, g) + Prob(“Jebara”, c)
+For more information about encoding or decoding, refer to [Incorporating Copying Mechanism in Sequence-to-Sequence Learning](http://arxiv.org/pdf/1603.06393.pdf) section 2.1. 
+
+#####[Sequence to Sequence Learning with Neural Networks](http://arxiv.org/pdf/1409.3215v3.pdf) by Sutskever et al.
+* Recommends reversing the input sequence ("ABC" is entered as "CBA")
+* Explains that backpropagation has an easier time "establishing communication" between the source sentence and the target sentence
+* Achieves state of the art score on English-French translation, beats state of the art score if the output is rescored
+
+#####[Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation](http://arxiv.org/pdf/1406.1078.pdf) by Cho et al.
+* Introduces a simpler version of LSTM 
+* Notes that the performance deteriorates rapidly as the length of an input sentence increases
 
 
-http://arxiv.org/abs/1602.06023 
-http://www.cinjon.com/papers-multimodal-seq2seq/
-http://stanford.edu/~lmthang/data/papers/emnlp15_attn.pdf
-https://www.aclweb.org/anthology/P/P15/P15-1152.pdf
-http://arxiv.org/pdf/1506.06714v1.pdf
-http://arxiv.org/pdf/1502.03044.pdf
-https://papers.nips.cc/paper/5635-grammar-as-a-foreign-language.pdf
-
-maybe?
-http://arxiv.org/pdf/1511.06931.pdf
-http://arxiv.org/abs/1508.06615 - attention
-
-application:
-http://www.wired.com/2015/06/google-made-chatbot-debates-meaning-life/
-http://googleresearch.blogspot.com/2015/11/computer-respond-to-this-email.html
-
-
-blog: 
-http://domkaukinen.com/tag/seq2seq/
-https://indico.io/blog/sequence-modeling-neuralnets-part1/
-
-
-projects:
- 
-TF - https://github.com/inikdom/neural-chatbot
-Torch - https://github.com/macournoyer/neuralconvo
-Torch - https://github.com/harvardnlp/seq2seq-attn
-Keras - https://github.com/nicolas-ivanov/debug_seq2seq
-Chainer - https://github.com/kenkov/seq2seq
-Theano - https://github.com/adamchanson/seq2seq
-TF - https://github.com/nicolas-ivanov/tf_seq2seq_chatbot
-Torch - https://github.com/eriche2016/seq2seq-1
-Raw numpy - https://github.com/ma2rten/seq2seq
-
-
-data sets:
-WMT '14' eng-french
 
