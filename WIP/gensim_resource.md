@@ -19,8 +19,8 @@ models:
 
 TFIDF:
 https://github.com/piskvorky/gensim/blob/develop/gensim/models/tfidfmodel.py
-http://stackoverflow.com/questions/9470479/how-is-tf-idf-implemented-in-gensim-tool-in-python
 https://radimrehurek.com/gensim/models/tfidfmodel.html
+http://stackoverflow.com/questions/9470479/how-is-tf-idf-implemented-in-gensim-tool-in-python
 term `i` in document `j` in a corpus of D documents:
     weight_{i,j} = frequency_{i,j} * log_2(D / document_freq_{i})
 http://michaelerasm.us/tf-idf-in-10-minutes/
