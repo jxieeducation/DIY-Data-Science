@@ -34,12 +34,9 @@ easy_install gensim
 * [Corpus streaming tutorial](https://radimrehurek.com/gensim/tut1.html#corpus-streaming-one-document-at-a-time)
 	* A corpus is simply an iterable where models like Word2Vec can iterate through
 	* To train on corpuses larger than memory, we need to stream the corpus content
-	* Done through creating an object that has an ```__iter__``` function
+
 #####Models and Transformation
 * Models (e.g. LsiModel, Word2Vec) are built / trained from a corpus
-* Transformations (e.g. ```corpus_topics = LsiModel[corpus]```) are functions applied to corpuses
 * [Transformation interface tutorial](https://radimrehurek.com/gensim/tut2.html#transformation-interface)
-	* Must build a model first (e.g. ```models.LsiModel(corpus_tfidf)```)
-	* Then apply the model and transform corpuses
-	* The rest of the section is about different transformations
-#####
+
+#####TF-IDF
