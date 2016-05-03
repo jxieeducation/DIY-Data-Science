@@ -15,7 +15,7 @@ _Please make [Pull Requests](https://github.com/jxieeducation/DIY-Data-Science/p
 
 ----------
 
-Seq2Seq solves the traditional fixed-size input problem thatEffective Approaches to Attention-based Neural Machine Translation prevents traditional DNNs from mastering sequence based tasks such as translation and question answering. It has been shown to have state of the art performances in English-French and English-German translations and in responding to short questions. 
+Seq2Seq solves the traditional fixed-size input problem that prevents traditional DNNs from mastering sequence based tasks such as translation and question answering. It has been shown to have state of the art performances in English-French and English-German translations and in responding to short questions. 
 
 ![Generated dialogue](http://s32.postimg.org/6e20by8v9/Screen_Shot_2016_05_01_at_9_29_05_AM.png)
 
