@@ -6,6 +6,8 @@ _Please make [Pull Requests](https://github.com/jxieeducation/DIY-Data-Science/p
 
 ----------
 
+![gensim logo](http://trevor-smith.github.io/images/gensim.png)
+
 ###Table Of Contents
 * [Hello World](#hello-world)
 * [Theory](#theory)
