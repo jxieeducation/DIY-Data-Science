@@ -43,6 +43,7 @@ expain:
 http://arxiv.org/pdf/1402.3722v1.pdf
 http://rare-technologies.com/making-sense-of-word2vec/
 http://deeplearning4j.org/word2vec.html
+http://www-personal.umich.edu/~ronxin/pdf/w2vexp.pdf
 
 
 Doc2vec:
