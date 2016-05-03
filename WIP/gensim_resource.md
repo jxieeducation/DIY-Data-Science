@@ -1,45 +1,77 @@
-##The DIY Guide to Gensim
 
-[![Analytics](https://ga-beacon.appspot.com/UA-61611403-2/jxieeducation/gensim?pixel)](https://github.com/igrigorik/ga-beacon)
 
-_Please make [Pull Requests](https://github.com/jxieeducation/DIY-Data-Science/pulls) for good resources, or create [Issues](https://github.com/jxieeducation/DIY-Data-Science/issues) for any feedback! Thanks!_
+Text to Vector
+https://radimrehurek.com/gensim/tut1.html
+Corpus:
 
-----------
-###Table Of Contents
-* [Main Idea](#main-idea)
-* [Applications](#applications)
-* [Resources](#resources)
-	* [Datasets](#datasets)
-	* [Code Examples](#code-examples)
-	* [Blogs](#blogs)
 
-----------
+--------------
 
-Gensim is a very performant python library for NLP projects. It is arguably the most popular library for Word2Vec and Doc2Vec. In addition, it also provides various NLP tools such as LDA, LSI and Random Projection. 
+models:
+[quality of life]
+- phrase
+- tfidf
+[topic modeling]
+- lda
+- lsi
+- rp
+- hdp
 
-### Installation
-```
-pip install gensim
-easy_install gensim
-```
+TFIDF:
+https://github.com/piskvorky/gensim/blob/develop/gensim/models/tfidfmodel.py
+http://stackoverflow.com/questions/9470479/how-is-tf-idf-implemented-in-gensim-tool-in-python
+https://radimrehurek.com/gensim/models/tfidfmodel.html
+term `i` in document `j` in a corpus of D documents:
+    weight_{i,j} = frequency_{i,j} * log_2(D / document_freq_{i})
+http://michaelerasm.us/tf-idf-in-10-minutes/
 
-----------
+Phrases:
+https://github.com/piskvorky/gensim/blob/develop/gensim/models/phrases.py
+https://radimrehurek.com/gensim/models/phrases.html
+**can be used in Word2Vec
+http://www.markhneedham.com/blog/2015/02/12/pythongensim-creating-bigrams-over-how-i-met-your-mother-transcripts/
+http://datascience.stackexchange.com/questions/6052/how-to-recognize-a-two-part-term-when-the-space-is-removed-bigdata-and-big
 
-###Hello World
-#####Text to Vectors
-* For everything else in this library, we first need to transform text to vectors
-* [String to vectors tutorial](https://radimrehurek.com/gensim/tut1.html#from-strings-to-vectors)
-	* Create a dictionary first that maps words to ids
-	* Transform the text into vectors through ```dictionary.doc2bow(texts)```
-* [Corpus streaming tutorial](https://radimrehurek.com/gensim/tut1.html#corpus-streaming-one-document-at-a-time)
-	* A corpus is simply an iterable where models like Word2Vec can iterate through
-	* To train on corpuses larger than memory, we need to stream the corpus content
-	* Done through creating an object that has an ```__iter__``` function
-#####Models and Transformation
-* Models (e.g. LsiModel, Word2Vec) are built / trained from a corpus
-* Transformations (e.g. ```corpus_topics = LsiModel[corpus]```) are functions applied to corpuses
-* [Transformation interface tutorial](https://radimrehurek.com/gensim/tut2.html#transformation-interface)
-	* Must build a model first (e.g. ```models.LsiModel(corpus_tfidf)```)
-	* Then apply the model and transform corpuses
-	* The rest of the section is about different transformations
-#####
+
+------
+
+Word2vec:
+https://github.com/piskvorky/gensim/blob/develop/gensim/models/word2vec.py
+https://radimrehurek.com/gensim/models/word2vec.html
+https://codesachin.wordpress.com/2015/10/09/generating-a-word2vec-model-from-a-block-of-text-using-gensim-python/
+expain:
+http://arxiv.org/pdf/1402.3722v1.pdf
+http://rare-technologies.com/making-sense-of-word2vec/
+http://deeplearning4j.org/word2vec.html
+
+
+Doc2vec:
+https://github.com/piskvorky/gensim/blob/develop/gensim/models/doc2vec.py
+https://radimrehurek.com/gensim/models/doc2vec.html
+http://arxiv.org/pdf/1405.4053v2.pdf
+** Can't plug in normal corpus
+https://linanqiu.github.io/2015/10/07/word2vec-sentiment/
+http://stackoverflow.com/questions/31321209/doc2vec-how-to-get-document-vectors
+
+
+random projection:
+https://github.com/piskvorky/gensim/blob/develop/gensim/models/rpmodel.py
+https://radimrehurek.com/gensim/models/rpmodel.html
+http://fastml.com/dimensionality-reduction-for-sparse-binary-data/
+http://users.ics.aalto.fi/ella/publications/randproj_kdd.pdf
+
+LDA:
+https://github.com/piskvorky/gensim/blob/develop/gensim/models/ldamodel.py
+https://radimrehurek.com/gensim/models/ldamodel.html
+tedunderwood.com/2012/04/07/topic-modeling-made-just-simple-enough/
+https://rstudio-pubs-static.s3.amazonaws.com/79360_850b2a69980c4488b1db95987a24867a.html
+http://brandonrose.org/clustering#Latent-Dirichlet-Allocation
+http://confusedlanguagetech.blogspot.in/2012/07/jordan-boyd-graber-and-philip-resnik.html
+
+LSI:
+https://github.com/piskvorky/gensim/blob/develop/gensim/models/lsimodel.py
+https://radimrehurek.com/gensim/models/lsimodel.html
+PCA on term-document matrix
+https://www.researchgate.net/post/LSA_SVD_How_to_statistically_interpret_negative_values_in_U_and_Vt
+
+
