@@ -1,8 +1,8 @@
 # DIY Data Science
 
-![DIY logo](https://pbs.twimg.com/profile_images/550415811274223616/3caLuhwl_400x400.png)
+![DIY logo](https://mir-s3-cdn-cf.behance.net/project_modules/disp/9336839151265.560c985e288ea.png)
 
-Compilation of open source data science resources! The best way to learn data science is to DO IT YOURSELF! 
+Compilation of data science resources optimized for self-education! The best way to learn data science is to DO IT YOURSELF! 
 
 ###Libraries & Code:
 * [XGBoost](https://github.com/jxieeducation/DIY-Nerd---Data-Science-Resources/blob/master/xgboost.md)
