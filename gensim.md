@@ -79,7 +79,7 @@ _Just a simple code-based intro, theory is covered in the next section_
 * [Math approach](http://www.engr.uvic.ca/~seng474/svd.pdf)
 
 #####LDA
-* [Intuition](tedunderwood.com/2012/04/07/topic-modeling-made-just-simple-enough/), [Another explanation](http://blog.echen.me/2011/08/22/introduction-to-latent-dirichlet-allocation/)
+* [Intuition](https://tedunderwood.com/2012/04/07/topic-modeling-made-just-simple-enough/), [Another explanation](http://blog.echen.me/2011/08/22/introduction-to-latent-dirichlet-allocation/)
 * [Paper](http://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf)
 
 #####Word2Vec

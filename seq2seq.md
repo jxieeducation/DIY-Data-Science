@@ -74,7 +74,7 @@ For more information about encoding or decoding, refer to [Incorporating Copying
 - Defines a global attention model that is a simplified derivation
 - Defines a local attention model that focuses only on a small subset of the source positions per target word to reduce computation for long inputs
 
-#####[Multi-Task Sequence to Sequence Learning](http://arxiv.org/pdf/1511.06114v1.pdf)
+#####[Multi-Task Sequence to Sequence Learning](http://arxiv.org/pdf/1511.06114.pdf)
 ![many to one](http://s32.postimg.org/mna9f96xx/Screen_Shot_2016_05_01_at_9_30_27_AM.png)
 - Trains the same encoder and/or decoder on many different tasks at the same time
 - Can be done as one (encoder) to many (decoder), many to one and many to many for tasks like image captioning and machine translation
