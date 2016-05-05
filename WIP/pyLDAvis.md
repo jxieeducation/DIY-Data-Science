@@ -49,18 +49,25 @@ _Just a simple code-based intro, theory is covered in the next section_
 
 #####Interpreting LDAvis
 * LDAvis tries to answer 3 important questions
-	* What is the meaning of each topic?
-	* How prevalent is each topic?
-	* How do topics relate to each other?
+	* What is the meaning of each topic? (right side of display)
+		* The lambda knob is adjustable 
+		* Left (0) means that you value how exclusive a word is to a topic
+		* Right (1) means that you value how probable a word is to appear in a topic
+	* How prevalent is each topic? (left side of display)
+		* Size or area of a topic as calculated from [Saliency](#saliency)
+	* How do topics relate to each other? (left side of display)
+		* Overlap between circles also calculated from [Saliency](#saliency)
 
 
 ###Theory
 
+#####[LDA Intro](https://github.com/jxieeducation/DIY-Data-Science/blob/master/gensim.md#lda)
+
 LDAvis is really findings from two papers. One deals with visualizing how topics relate to each other, and the other figures out how to find the most relevant words to represent a topic.
 
 #####Relevance
-* [Paper](http://nlp.stanford.edu/events/illvi2014/papers/sievert-illvi2014.pdf)
+* [Paper](http://nlp.stanford.edu/events/illvi2014/papers/sievert-illvi2014.pdf), explains right side of the display
 
 
 #####Saliency
-* [Paper](http://vis.stanford.edu/files/2012-Termite-AVI.pdf) 
+* [Paper](http://vis.stanford.edu/files/2012-Termite-AVI.pdf), explains left side of the display
