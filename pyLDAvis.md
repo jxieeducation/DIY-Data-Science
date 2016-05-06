@@ -79,3 +79,5 @@ _Just a simple code-based intro, theory is covered in the next section_
 * Right ```lambda = 1``` means that you value how probable a word is to appear in a topic
 	* words are purely ranked on lift ```P(word | topic) / P(word) ```
 * The ranking formula is ```lambda * P(word | topic) + (1 - lambda) * lift ``` (see paper section 3.1)
+
+###[Super Short Feedback Survey](http://bit.ly/1Wd78Iw) (Pretty please!)
