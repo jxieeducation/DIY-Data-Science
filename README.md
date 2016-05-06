@@ -8,6 +8,7 @@ Compilation of data science resources optimized for **Self-Education**! The best
 * [XGBoost](https://github.com/jxieeducation/DIY-Nerd---Data-Science-Resources/blob/master/xgboost.md)
 * [Chainer](https://github.com/jxieeducation/DIY-Nerd---Data-Science-Resources/blob/master/chainer.md)
 * [Gensim](https://github.com/jxieeducation/DIY-Nerd---Data-Science-Resources/blob/master/gensim.md)
+* [pyLDAvis](https://github.com/jxieeducation/DIY-Nerd---Data-Science-Resources/blob/master/pyLDAvis.md)
 
 ###Theory & Research:
 * [Seq2Seq](https://github.com/jxieeducation/DIY-Nerd---Data-Science-Resources/blob/master/seq2seq.md)
