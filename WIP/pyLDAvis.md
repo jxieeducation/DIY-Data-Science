@@ -9,13 +9,20 @@ _Please make [Pull Requests](https://github.com/jxieeducation/DIY-Data-Science/p
 ![pyLDAvis logo](https://camo.githubusercontent.com/9322054a979e54f1dc0bf670a853b06db766be9e/687474703a2f2f7777772e6b656e6e79736869726c65792e636f6d2f666967757265732f6c64617669732d7069632e706e67)
 
 ###Table Of Contents
+* [One Minute Guide](#one-minute-guide)
 * [Hello World](#hello-world)
 * [Theory](#theory)
 
 ----------
 
-It's not easy to interpret LDA. Most of us guess the topics by eye balling the most probable words, and make sense of the topics by looking for common words. LDAvis makes this insanely easy and provides a great interactive UI. And the best of all, LDAvis requires less than 5 lines of code. [Demo](http://cpsievert.github.io/LDAvis/newsgroup/vis/#topic=0&lambda=1&term=)
+###One Minute Guide
 
+LDAvis helps you interpret LDA results by answer 3 questions:
+1. What is the meaning of each topic?
+2. How prevalent is each topic?
+3. How do topics relate to each other?
+
+[![demo button](http://3.bp.blogspot.com/-Zmp5pJPF5DQ/VDyqz1K4c5I/AAAAAAAAALA/lYa7IJqGOwQ/s1600/demo.png)](http://cpsievert.github.io/LDAvis/newsgroup/vis/#topic=0&lambda=1&term=).
 
 ### Installation
 ```
@@ -50,24 +57,19 @@ _Just a simple code-based intro, theory is covered in the next section_
 #####Interpreting LDAvis
 * LDAvis tries to answer 3 important questions
 	* What is the meaning of each topic? (right side of display)
-		* The lambda knob is adjustable 
+		* The lambda knob is adjustable, see [Topic Composition](#topic-composition)
 		* Left (0) means that you value how exclusive a word is to a topic
 		* Right (1) means that you value how probable a word is to appear in a topic
-	* How prevalent is each topic? (left side of display)
-		* Size or area of a topic as calculated from [Saliency](#saliency)
-	* How do topics relate to each other? (left side of display)
-		* Overlap between circles also calculated from [Saliency](#saliency)
+	* How prevalent is each topic?  ```size or area of a topic```
+	* How do topics relate to each other? ```overlap between circles```
 
 
 ###Theory
 
 #####[LDA Intro](https://github.com/jxieeducation/DIY-Data-Science/blob/master/gensim.md#lda)
 
-LDAvis is really findings from two papers. One deals with visualizing how topics relate to each other, and the other figures out how to find the most relevant words to represent a topic.
-
-#####Relevance
+#####Topic Composition
 * [Paper](http://nlp.stanford.edu/events/illvi2014/papers/sievert-illvi2014.pdf), explains right side of the display
-
-
-#####Saliency
-* [Paper](http://vis.stanford.edu/files/2012-Termite-AVI.pdf), explains left side of the display
+* When lambda is 1, the words are purely ranked based on P(word | topic)
+* When lambda is 0, the words are purely ranked based on lift ( P(word | topic) divides by P(word) )
+* The ranking formula is therefore ```lambda * P(word | topic) + (1 - lambda) * lift ``` (see paper section 3.1)
