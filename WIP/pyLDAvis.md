@@ -22,7 +22,7 @@ LDAvis helps you interpret LDA results by answer 3 questions:
 2. How prevalent is each topic?
 3. How do topics relate to each other?
 
-[![demo button](http://3.bp.blogspot.com/-Zmp5pJPF5DQ/VDyqz1K4c5I/AAAAAAAAALA/lYa7IJqGOwQ/s1600/demo.png)](http://cpsievert.github.io/LDAvis/newsgroup/vis/#topic=0&lambda=1&term=).
+[![demo button](http://chatforcharities.org/wp-content/uploads/2015/06/view-demo-button.jpg)](http://bit.ly/1OghkHZ).
 
 ### Installation
 ```
@@ -36,40 +36,44 @@ _Just a simple code-based intro, theory is covered in the next section_
 
 #####Firing up a notebook
 * The UI is available as a notebook or HTML, let's use the notebook first
-* [Install Jupyter](http://jupyter.readthedocs.io/en/latest/install.html#installing-jupyter-i-already-have-python), [Running a notebook](http://jupyter.readthedocs.io/en/latest/running.html#running-the-notebook)
+* [Install Jupyter](http://bit.ly/21C6L9E), [Running a notebook](http://bit.ly/1Nlh4MR)
 
 #####Train a quick LDA model
-* LDAvis follows the BYOM - Bring your own model philosophy, so we can pretty much use any framework in python or R
-* Gensim - [Make a corpus](https://radimrehurek.com/gensim/tut1.html), then run ```LdaModel(corpus, num_topics=3)```, [Docs](https://radimrehurek.com/gensim/models/ldamodel.html)
-* Scikit-learn - [Code](http://scikit-learn.org/stable/auto_examples/applications/topics_extraction_with_nmf_lda.html), [Docs](http://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html)
-* GraphLab - [Notebook](http://nbviewer.jupyter.org/github/bmabey/pyLDAvis/blob/master/notebooks/GraphLab.ipynb#topic=7&lambda=0.41&term=)
-* LDA in R - [Load model into a python dictionary](http://nbviewer.jupyter.org/github/bmabey/pyLDAvis/blob/master/notebooks/pyLDAvis_overview.ipynb#BYOM---Bring-your-own-model)
+* LDAvis follows the BYOM - Bring your own model - philosophy, so we can pretty much use any framework in python or R
+* Gensim - [Make a corpus](http://bit.ly/1QTxjva), then run ```LdaModel(corpus, num_topics=3)```, [Docs](http://bit.ly/1Nlh7IB)
+* Scikit-learn - [Code](http://bit.ly/1O1aTh0), [Docs](http://bit.ly/24w0Zf0)
+* GraphLab - [Notebook](http://bit.ly/21C7J5T)
+* LDA in R - [Load model into a python dictionary](http://bit.ly/1QTxlTX)
+
+#####Enable Notebook
+* ```pyLDAvis.enable_notebook()```
 
 #####Prepare LDAvis
-* First enable notebook display ```pyLDAvis.enable_notebook()```
 * pyLDAvis uses the ```prepare``` method to load the LDA models
-* Different libraries use a different variation of the ```prepare``` method
-* Gensim - ```prepare(model, corpus, dictionary)```, [Source](https://github.com/bmabey/pyLDAvis/blob/master/pyLDAvis/gensim.py#L52)
-* Scikit-learn - ```prepare(documents, vectorizer, model)```, [Source](https://github.com/bmabey/pyLDAvis/blob/master/pyLDAvis/sklearn.py#L21)
-* GraphLab - ```prepare(model, documents)```, [Source](https://github.com/bmabey/pyLDAvis/blob/master/pyLDAvis/graphlab.py#L46)
-* LDA in R - ```prepare(*args)```, [Example](http://nbviewer.jupyter.org/github/bmabey/pyLDAvis/blob/master/notebooks/pyLDAvis_overview.ipynb#BYOM---Bring-your-own-model)
+* Different libraries use different variations of the ```prepare``` method
+* Gensim - ```prepare(model, corpus, dictionary)```, [Source](http://bit.ly/1NlhcMw)
+* Scikit-learn - ```prepare(documents, vectorizer, model)```, [Source](http://bit.ly/1T4bKzU)
+* GraphLab - ```prepare(model, documents)```, [Source](http://bit.ly/1NlhgvN)
+* LDA in R - ```prepare(*args)```, [Example](http://bit.ly/1QTxlTX)
+* And voila! A beautiful dashboard! 
 
 #####Interpreting LDAvis
 * LDAvis tries to answer 3 important questions
-	* What is the meaning of each topic? (right side of display)
-		* The lambda knob is adjustable, see [Topic Composition](#topic-composition)
-		* Left (0) means that you value how exclusive a word is to a topic
-		* Right (1) means that you value how probable a word is to appear in a topic
+	* What is the meaning of each topic?
+		* The blue denotes overall term frequency and the red denotes term frequency within topic
+		* To understand the lambda knob, see [Topic Composition](#topic-composition)
 	* How prevalent is each topic?  ```size or area of a topic```
 	* How do topics relate to each other? ```overlap between circles```
 
 
 ###Theory
 
-#####[LDA Intro](https://github.com/jxieeducation/DIY-Data-Science/blob/master/gensim.md#lda)
+#####[LDA Intro](http://bit.ly/1rxm2w0)
 
 #####Topic Composition
-* [Paper](http://nlp.stanford.edu/events/illvi2014/papers/sievert-illvi2014.pdf), explains right side of the display
+* [Paper](http://stanford.io/1rxm3Af), explains right side of the display
+* Left (0) means that you value how exclusive a word is to a topic
+* Right (1) means that you value how probable a word is to appear in a topic
 * When lambda is 1, the words are purely ranked based on P(word | topic)
-* When lambda is 0, the words are purely ranked based on lift ( P(word | topic) divides by P(word) )
+* When lambda is 0, the words are purely ranked based on lift ( P(word | topic) / P(word) )
 * The ranking formula is therefore ```lambda * P(word | topic) + (1 - lambda) * lift ``` (see paper section 3.1)
