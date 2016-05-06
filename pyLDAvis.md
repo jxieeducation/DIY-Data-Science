@@ -1,4 +1,4 @@
-##The DIY Guide to Gensim
+##The DIY Guide to pyLDAvis
 
 [![Analytics](https://ga-beacon.appspot.com/UA-61611403-2/jxieeducation/gensim?pixel)](https://github.com/igrigorik/ga-beacon)
 
@@ -75,7 +75,7 @@ _Just a simple code-based intro, theory is covered in the next section_
 #####Topic Composition
 * [Paper](http://stanford.io/1rxm3Af) (see right module)
 * Left ```lambda = 0``` means that you value how exclusive a word is to a topic
-	* words are purely ranked based on ```P(word | topic)```
+	* words are purely ranked on ```P(word | topic)```
 * Right ```lambda = 1``` means that you value how probable a word is to appear in a topic
-	* words are purely ranked based on lift ```P(word | topic) / P(word) ```
+	* words are purely ranked on lift ```P(word | topic) / P(word) ```
 * The ranking formula is ```lambda * P(word | topic) + (1 - lambda) * lift ``` (see paper section 3.1)
