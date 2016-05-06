@@ -18,11 +18,12 @@ _Please make [Pull Requests](https://github.com/jxieeducation/DIY-Data-Science/p
 ###One Minute Guide
 
 LDAvis helps you interpret LDA results by answer 3 questions:
+
 1. What is the meaning of each topic?
 2. How prevalent is each topic?
 3. How do topics relate to each other?
 
-[![demo button](http://chatforcharities.org/wp-content/uploads/2015/06/view-demo-button.jpg)](http://bit.ly/1OghkHZ).
+[![demo button](http://3.bp.blogspot.com/-Zmp5pJPF5DQ/VDyqz1K4c5I/AAAAAAAAALA/lYa7IJqGOwQ/s1600/demo.png)](http://bit.ly/1OghkHZ).
 
 ### Installation
 ```
@@ -71,9 +72,9 @@ _Just a simple code-based intro, theory is covered in the next section_
 #####[LDA Intro](http://bit.ly/1rxm2w0)
 
 #####Topic Composition
-* [Paper](http://stanford.io/1rxm3Af), explains right side of the display
-* Left (0) means that you value how exclusive a word is to a topic
-* Right (1) means that you value how probable a word is to appear in a topic
+* [Paper](http://stanford.io/1rxm3Af) (explains right module)
+* Left ```lambda = 0``` means that you value how exclusive a word is to a topic
+* Right ```lambda = 1``` means that you value how probable a word is to appear in a topic
 * When lambda is 1, the words are purely ranked based on P(word | topic)
 * When lambda is 0, the words are purely ranked based on lift ( P(word | topic) / P(word) )
-* The ranking formula is therefore ```lambda * P(word | topic) + (1 - lambda) * lift ``` (see paper section 3.1)
+* The ranking formula is ```lambda * P(word | topic) + (1 - lambda) * lift ``` (see paper section 3.1)
