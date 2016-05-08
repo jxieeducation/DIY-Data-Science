@@ -7,7 +7,7 @@
 * DeepLIFT assigns importance scores for the input features
 
 ### Summary
-* DeepLIFT - Learning Important Features
+* DeepLIFT - Learning Feature Importance
 * A neuron's activation is its activation under reference input
 * Defines a concept of "contribution" that can be calculated one step at a time, like backprop
 	* For instance, C (x to t) = SUM C (x to y) * C (y to t)
