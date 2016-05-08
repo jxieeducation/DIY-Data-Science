@@ -4,14 +4,17 @@
 
 Compilation of data science resources optimized for **Self-Education**! The best way to learn data science is to **DO IT YOURSELF**! 
 
-###Frameworks & Libraries:
-* [XGBoost](https://github.com/jxieeducation/DIY-Nerd---Data-Science-Resources/blob/master/xgboost.md)
-* [Chainer](https://github.com/jxieeducation/DIY-Nerd---Data-Science-Resources/blob/master/chainer.md)
-* [Gensim](https://github.com/jxieeducation/DIY-Nerd---Data-Science-Resources/blob/master/gensim.md)
-* [pyLDAvis](https://github.com/jxieeducation/DIY-Nerd---Data-Science-Resources/blob/master/pyLDAvis.md)
-
 ###Theory & Research:
-* [Seq2Seq](https://github.com/jxieeducation/DIY-Nerd---Data-Science-Resources/blob/master/seq2seq.md)
+* [Seq2Seq](https://github.com/jxieeducation/DIY-Data-Science/blob/master/research/seq2seq.md)
+
+###Frameworks & Libraries:
+* [XGBoost](https://github.com/jxieeducation/DIY-Data-Science/blob/master/frameworks/xgboost.md)
+* [Chainer](https://github.com/jxieeducation/DIY-Data-Science/blob/master/frameworks/chainer.md)
+* [Gensim](https://github.com/jxieeducation/DIY-Data-Science/blob/master/frameworks/gensim.md)
+* [pyLDAvis](https://github.com/jxieeducation/DIY-Data-Science/blob/master/frameworks/pyLDAvis.md)
+
+###Deep Learning Paper Notes:
+* [Papernotes](https://github.com/jxieeducation/DIY-Data-Science/blob/master/papernotes/)
 
 -------
 
