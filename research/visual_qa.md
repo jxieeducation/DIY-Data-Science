@@ -16,9 +16,6 @@ Visual QA is a continuation of deep learning's efforts in image captioning and N
 
 ![visual qa demo](http://s32.postimg.org/wcjlzzu2t/Screen_Shot_2016_05_08_at_2_42_07_PM.png)
 
-<a target="_new" href="http://bit.ly/1Xge4nb">![demo button](http://3.bp.blogspot.com/-Zmp5pJPF5DQ/VDyqz1K4c5I/AAAAAAAAALA/lYa7IJqGOwQ/s1600/demo.png)
-</a>
-
 ###Hello World
 
 Two interesting events occurred in late 2014. The first would be efforts in image captioning. And the second is in sequence to sequence learning. Visual question answering is the natural combination of the two, a disciplinary born from computer vision and NLP.
