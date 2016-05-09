@@ -16,7 +16,7 @@ Visual QA is a continuation of deep learning's efforts in image captioning and N
 
 ![visual qa demo](http://s32.postimg.org/wcjlzzu2t/Screen_Shot_2016_05_08_at_2_42_07_PM.png)
 
-<a href="http://bit.ly/1Xge4nb" target="_blank">![demo button](http://3.bp.blogspot.com/-Zmp5pJPF5DQ/VDyqz1K4c5I/AAAAAAAAALA/lYa7IJqGOwQ/s1600/demo.png)
+<a target="_blank" href="http://bit.ly/1Xge4nb">![demo button](http://3.bp.blogspot.com/-Zmp5pJPF5DQ/VDyqz1K4c5I/AAAAAAAAALA/lYa7IJqGOwQ/s1600/demo.png)
 </a>
 
 ###Hello World
