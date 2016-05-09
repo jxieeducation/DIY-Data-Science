@@ -6,6 +6,7 @@ Compilation of data science resources optimized for **Self-Education**! The best
 
 ###Theory & Research:
 * [Seq2Seq](https://github.com/jxieeducation/DIY-Data-Science/blob/master/research/seq2seq.md)
+* [Visual QA](https://github.com/jxieeducation/DIY-Data-Science/blob/master/research/visual_qa.md)
 
 ###Frameworks & Libraries:
 * [XGBoost](https://github.com/jxieeducation/DIY-Data-Science/blob/master/frameworks/xgboost.md)
