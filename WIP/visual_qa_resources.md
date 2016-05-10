@@ -30,8 +30,7 @@
 - In section 4.2 and 4.3 introduces many baseline net architectures
 
 
-- Image Question Answering using Convolutional Neural Network
-with Dynamic Parameter Prediction
+- Image Question Answering using Convolutional Neural Network with Dynamic Parameter Prediction
 - http://arxiv.org/pdf/1511.05756.pdf
 - This is a very creative paper that is different from others
 - Solves only for single answer question, to reduce the main network to solve for a classification problem
