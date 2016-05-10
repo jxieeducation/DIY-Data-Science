@@ -1,7 +1,7 @@
 # A Convolutional Attention Network for Extreme Summarization of Source Code
 
 * [Arxiv link](http://arxiv.org/pdf/1602.03001v1.pdf)
-* [Source code](https://github.com/mast-group/convolutional-attention/tree/master/convolutional_attention)
+* [Source code](https://github.com/mast-group/convolutional-attention/)
 * [Data set](http://groups.inf.ed.ac.uk/cup/codeattention/)
 
 ### Application
@@ -18,6 +18,6 @@
 
 ![net architecture](http://s32.postimg.org/rc2fdy0yd/Screen_Shot_2016_05_09_at_10_18_36_PM.png)
 
-![attention visualization](http://s32.postimg.org/c0s5tymol/Screen_Shot_2016_05_09_at_10_17_25_PM.png)
-(Attention visualization)
+![attention visualization](http://s32.postimg.org/cu1juyi51/Screen_Shot_2016_05_09_at_10_21_14_PM.png)
+(Attention visualization for getNode())
 
