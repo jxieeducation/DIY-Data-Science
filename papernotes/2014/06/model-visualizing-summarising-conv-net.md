@@ -1,6 +1,7 @@
 # Modelling, Visualising and Summarising Documents with a Single Convolutional Neural Network
 
-[Arxiv link](http://arxiv.org/pdf/1406.3830v1.pdf) [Code](https://github.com/mdenil/txtnets)
+* [Arxiv link](http://arxiv.org/pdf/1406.3830v1.pdf) 
+* [Code](https://github.com/mdenil/txtnets)
 
 ### Application
 * This paper introduces a way to create document embeddings
