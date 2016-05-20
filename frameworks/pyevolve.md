@@ -12,48 +12,51 @@ _Please make [Pull Requests](https://github.com/jxieeducation/DIY-Data-Science/p
 
 ----------
 
-PyEvolve is a library for genetic algorithms. Genetic algorithm is an optimization technique that has applications such as hyperparameter tuning, or any other hard search problem.
+PyEvolve is a genetic algorithm library, which is a biologically-inspired optimization technique. This library enables us to solve search problems such as hyperparameter tuning.
 
 ###Learn By Example
-_The goal of this section is to get you hands on ASAP._
+_The goal of this section is to get you hands on ASAP. If the hello world example confuses you, try out the theory section first._
 
-#####[Hello World](http://pyevolve.sourceforge.net/getstarted.html#final-source-code)
+```pip install pyevolve```
+
+#####[Hello World](http://bit.ly/23Zhyum)
 * Define an eval function to calculate fitness
-* Genome deals with the encoding, initialization, mutation, crossover of the population
-* GA deals with hyperparameters such as generations, mutation rate and crossover rate
+* Genome defines the encoding, initialization, mutation, crossover of the population
+* GA assigns the search hyperparameters such as generations, mutation rate and crossover rate
 
-#####[Interactive Mode](http://pyevolve.sourceforge.net/getstarted.html#the-interactive-mode)
+#####[Interactive Mode](http://bit.ly/1TiD0uo)
 * Visualizations of population and fitness
-* Does not work on Macs, [workaround](http://blog.christianperone.com/2009/02/the-pyevolve-interactive-mode-on-mac-os/)
+* Does not work on Macs, [workaround](http://bit.ly/1Tr00V1)
 
-#####[More parameters example](https://github.com/perone/Pyevolve/blob/master/examples/pyevolve_ex2_realgauss.py)
-* Changed range of the genome [here](https://github.com/perone/Pyevolve/blob/master/examples/pyevolve_ex2_realgauss.py#L18)
-* Gaussian mutator [here](https://github.com/perone/Pyevolve/blob/master/examples/pyevolve_ex2_realgauss.py#L24)
-* Selection algorithm is changed as well [here](https://github.com/perone/Pyevolve/blob/master/examples/pyevolve_ex2_realgauss.py#L31)
+#####[More Parameters](http://bit.ly/1TiCRY0)
+* Changed the range of the genomes [here](http://bit.ly/1TKf2CK)
+* Gaussian mutator example [here](http://bit.ly/23ZhLO0)
+* Selection algorithm is changed as well [here](http://bit.ly/1rXZjcI)
 
-#####[Harder Eval Function](https://github.com/perone/Pyevolve/blob/master/examples/pyevolve_ex3_schaffer.py)
-* Schaffer F6 is a harder eval func [visualization](http://www.cs.unm.edu/~neal.holts/dga/benchmarkFunction/schafferf6.html)
-* Termination criteria [here](https://github.com/perone/Pyevolve/blob/master/examples/pyevolve_ex3_schaffer.py#L19) and [here](https://github.com/perone/Pyevolve/blob/master/examples/pyevolve_ex3_schaffer.py#L34)
+#####[Harder Search Problemhttp://bit.ly/1OCJMEa]()
+* Schaffer F6 is a harder eval func [visualization](http://bit.ly/1rXYXTz)
+* Termination criteria for early stopping [here](http://bit.ly/23ZhJ8P) and [here](http://bit.ly/1Xng5O8)
 
-#####[Maximize to Minimize](https://github.com/perone/Pyevolve/blob/master/examples/pyevolve_ex4_sigmatrunc.py)
-* Minimize instead of maximize [here](https://github.com/perone/Pyevolve/blob/master/examples/pyevolve_ex4_sigmatrunc.py#L34)
-* Scaling the fitness score to better evaluate the scores [here](https://github.com/perone/Pyevolve/blob/master/examples/pyevolve_ex4_sigmatrunc.py#L37)
+#####[Maximize to Minimize](http://bit.ly/22hMaYP)
+* Minimize instead of maximize [here](http://bit.ly/1sv6Q2F)
+* Scaling the fitness scores to better distinguish the good from the bad [here](http://bit.ly/1VcJfQ0)
 
-#####[Callback](https://github.com/perone/Pyevolve/blob/master/examples/pyevolve_ex5_callback.py)
-* Callback is called after every generation [here](https://github.com/perone/Pyevolve/blob/master/examples/pyevolve_ex5_callback.py#L35)
+#####[Callback](http://bit.ly/1TiDfFW)
+* Callback is called after every generation [here](http://bit.ly/1Rcm5SM)
+* Good for logging statistics of the population
 
-#####[2D Search](https://github.com/perone/Pyevolve/blob/master/examples/pyevolve_ex9_g2dlist.py)
-* Good for grid based search problems such as the nqueen problem
+#####[2D Problem Example](http://bit.ly/22hM7fk)
+* Good for grid search problems such as the N-Queen problem
 
-#####[1D Binary String Instead of List](https://github.com/perone/Pyevolve/blob/master/examples/pyevolve_ex10_g1dbinstr.py)
+#####[1D Binary String Example](http://bit.ly/1TnvKrW)
 * An extreme case for the normal G1DList
 * Useful for binary string problems
 
-#####[Allele Example](https://github.com/perone/Pyevolve/blob/master/examples/pyevolve_ex11_allele.py)
-* Alleles designed for discrete and categorical data instead of real and continuous data
-* Categorical data example [here](https://github.com/perone/Pyevolve/blob/master/examples/pyevolve_ex11_allele.py#L44)
+#####[Allele Example](http://bit.ly/1sv6WHQ)
+* Alleles are designed for discrete and categorical data instead of real and continuous data
+* Categorical data example [here](http://bit.ly/1OCK51D)
 
-#####[Genetic Programming Example](https://github.com/perone/Pyevolve/blob/master/examples/pyevolve_ex18_gp.py)
+#####[Genetic Programming Example](http://bit.ly/1U2PgMG)
 * Genetic programming is a branch of genetic algorithms
 * Computer programs are encoded as a set of genes that are then modified to produce a target output
 
@@ -63,26 +66,25 @@ _The goal of this section is to get you hands on ASAP._
 _The goal of this section is to explain the background behind the package_
 
 #####Genetic Algorithm
-* [GREAT GREAT tutorial](http://techeffigytutorials.blogspot.com/2015/02/the-genetic-algorithm-explained.html)
-* [Also good tutorial](http://geneticalgorithms.ai-depot.com/Tutorial/Overview.html)
-* [Complete and detailed tutorial](http://obitko.com/tutorials/genetic-algorithms/) (First few pages are boring though)
-* [Quora discussions](https://www.quora.com/topic/Genetic-Algorithms)
+* [Awesome tutorial](http://bit.ly/1TtivJR)
+* [Complete and detailed tutorial](http://bit.ly/1WFrZV2) (First few pages are boring though)
+* [Quora discussions](http://bit.ly/1TnvFVl)
 
 #####Encoding
-* [Great visualizations](http://www.obitko.com/tutorials/genetic-algorithms/encoding.php)
-* [Technical poster](http://www.ijarcsse.com/docs/papers/Volume_4/1_January2014/V4I1-0373.pdf)
+* [Great visualizations](http://bit.ly/20djgaq)
+* [Technical poster](http://bit.ly/22hMmXX)
 
 #####Selector
-* [Great visualization](http://www.obitko.com/tutorials/genetic-algorithms/selection.php)
+* [Great visualization](http://bit.ly/1sv74qF)
 
 #####Mutator & Crossover
-* [Great visualization](http://www.obitko.com/tutorials/genetic-algorithms/crossover-mutation.php)
-* [Research gate discussion](https://www.researchgate.net/post/What_is_the_role_of_mutation_and_crossover_probability_in_Genetic_algorithms)
-* [5 Mutations](http://www.geatbx.com/docu/algindex-04.html)
+* [Great visualization](http://bit.ly/1OQeXB6)
+* [Research gate discussion](http://bit.ly/25cZAKQ)
+* [5 Mutations](http://bit.ly/1TiDuAY)
 
 #####Genetic Programming
-* [Great intro](http://www.geneticprogramming.com/Tutorial/)
-* [Quora discussions](https://www.quora.com/topic/Genetic-Programming-1)
+* [Great intro](http://bit.ly/25cZD9q)
+* [Quora discussions](http://bit.ly/1qxL9Oh)
 
 
 ----------
