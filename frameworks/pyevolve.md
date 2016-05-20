@@ -33,7 +33,7 @@ _The goal of this section is to get you hands on ASAP. If the hello world exampl
 * Gaussian mutator example [here](http://bit.ly/23ZhLO0)
 * Selection algorithm is changed as well [here](http://bit.ly/1rXZjcI)
 
-#####[Harder Search Problemhttp://bit.ly/1OCJMEa]()
+#####[Harder Search Problem](http://bit.ly/1OCJMEa)
 * Schaffer F6 is a harder eval func [visualization](http://bit.ly/1rXYXTz)
 * Termination criteria for early stopping [here](http://bit.ly/23ZhJ8P) and [here](http://bit.ly/1Xng5O8)
 
