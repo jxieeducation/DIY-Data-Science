@@ -13,6 +13,7 @@ Compilation of data science resources optimized for **Self-Education**! The best
 * [Chainer](https://github.com/jxieeducation/DIY-Data-Science/blob/master/frameworks/chainer.md)
 * [Gensim](https://github.com/jxieeducation/DIY-Data-Science/blob/master/frameworks/gensim.md)
 * [pyLDAvis](https://github.com/jxieeducation/DIY-Data-Science/blob/master/frameworks/pyLDAvis.md)
+* [PyEvolve](https://github.com/jxieeducation/DIY-Data-Science/blob/master/frameworks/pyevolve.md)
 
 ###Deep Learning Paper Notes:
 * [Papernotes](https://github.com/jxieeducation/DIY-Data-Science/blob/master/papernotes/)

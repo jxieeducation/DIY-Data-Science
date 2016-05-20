@@ -6,9 +6,9 @@ _Please make [Pull Requests](https://github.com/jxieeducation/DIY-Data-Science/p
 
 ----------
 ###Table Of Contents
-* [Learn By Example](#learning-by-example)
-* [Documentation](#documentation)
+* [Learn By Example](#learn-by-example)
 * [Theory](#theory)
+* [Documentation](#documentation)
 
 ----------
 
@@ -59,18 +59,8 @@ _The goal of this section is to get you hands on ASAP._
 
 ----------
 
-###Documentation
-* [Git Repo](https://github.com/perone/Pyevolve/tree/master/pyevolve), [Official Documentation](http://pyevolve.sourceforge.net/)
-* GSimpleGA - [Code](https://github.com/perone/Pyevolve/blob/master/pyevolve/GSimpleGA.py) - [Documentation](http://pyevolve.sourceforge.net/module_gsimplega.html)
-* Selectors - [Code](https://github.com/perone/Pyevolve/blob/master/pyevolve/Selectors.py) - [Documentation](http://pyevolve.sourceforge.net/0_6rc1/module_selectors.html)
-* Scaling - [Code](https://github.com/perone/Pyevolve/blob/master/pyevolve/Scaling.py) - [Documentation](http://pyevolve.sourceforge.net/0_6rc1/module_scaling.html)
-* Crossover - [Code](https://github.com/perone/Pyevolve/blob/master/pyevolve/Crossovers.py) - [Documentation](http://pyevolve.sourceforge.net/module_crossovers.html)
-* Initializators - [Code](https://github.com/perone/Pyevolve/blob/master/pyevolve/Initializators.py) - [Documentation](http://pyevolve.sourceforge.net/module_initializators.html)
-* G1DList - [Code](https://github.com/perone/Pyevolve/blob/master/pyevolve/G1DList.py) - [Documentation](http://pyevolve.sourceforge.net/module_g1dlist.html)
-* G1DBinaryString - [Code](https://github.com/perone/Pyevolve/blob/master/pyevolve/G1DBinaryString.py) - [Documentation](http://pyevolve.sourceforge.net/module_g1dbinarystring.html)
-* G2DList - [Code](https://github.com/perone/Pyevolve/blob/master/pyevolve/G2DList.py) - [Documentation](http://pyevolve.sourceforge.net/0_6rc1/module_g2dlist.html)
-
 ###Theory
+_The goal of this section is to explain the background behind the package_
 
 #####Genetic Algorithm
 * [GREAT GREAT tutorial](http://techeffigytutorials.blogspot.com/2015/02/the-genetic-algorithm-explained.html)
@@ -93,3 +83,20 @@ _The goal of this section is to get you hands on ASAP._
 #####Genetic Programming
 * [Great intro](http://www.geneticprogramming.com/Tutorial/)
 * [Quora discussions](https://www.quora.com/topic/Genetic-Programming-1)
+
+
+----------
+
+###Documentation
+_The goal of this section is to reference more parameters and implementation details_
+
+* [Git Repo](https://github.com/perone/Pyevolve/tree/master/pyevolve), [Official Documentation](http://pyevolve.sourceforge.net/)
+* GSimpleGA - [Code](https://github.com/perone/Pyevolve/blob/master/pyevolve/GSimpleGA.py) - [Documentation](http://pyevolve.sourceforge.net/module_gsimplega.html)
+* Selectors - [Code](https://github.com/perone/Pyevolve/blob/master/pyevolve/Selectors.py) - [Documentation](http://pyevolve.sourceforge.net/0_6rc1/module_selectors.html)
+* Scaling - [Code](https://github.com/perone/Pyevolve/blob/master/pyevolve/Scaling.py) - [Documentation](http://pyevolve.sourceforge.net/0_6rc1/module_scaling.html)
+* Crossover - [Code](https://github.com/perone/Pyevolve/blob/master/pyevolve/Crossovers.py) - [Documentation](http://pyevolve.sourceforge.net/module_crossovers.html)
+* Initializators - [Code](https://github.com/perone/Pyevolve/blob/master/pyevolve/Initializators.py) - [Documentation](http://pyevolve.sourceforge.net/module_initializators.html)
+* G1DList - [Code](https://github.com/perone/Pyevolve/blob/master/pyevolve/G1DList.py) - [Documentation](http://pyevolve.sourceforge.net/module_g1dlist.html)
+* G1DBinaryString - [Code](https://github.com/perone/Pyevolve/blob/master/pyevolve/G1DBinaryString.py) - [Documentation](http://pyevolve.sourceforge.net/module_g1dbinarystring.html)
+* G2DList - [Code](https://github.com/perone/Pyevolve/blob/master/pyevolve/G2DList.py) - [Documentation](http://pyevolve.sourceforge.net/0_6rc1/module_g2dlist.html)
+
